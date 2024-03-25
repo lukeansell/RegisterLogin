@@ -9,7 +9,7 @@ namespace RegisterLogin
     public class LoginManager
     {
         private readonly List<Login> logins = [];
-        private readonly string txt = "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\PROG\\Projects\\RegisterLogin\\RegisterLogin\\logins.txt";
+        private readonly string txt = @"..\..\..\logins.txt";
 
         public LoginManager()
         {

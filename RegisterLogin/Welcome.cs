@@ -17,6 +17,7 @@ namespace RegisterLogin
         {
             InitializeComponent();
             f = form;
+            lblWelcomeUser.Text = "Welcome " + user;
         }
 
         private void Welcome_FormClosed(object sender, FormClosedEventArgs e)
@@ -24,6 +25,6 @@ namespace RegisterLogin
             f.Close();
         }
 
-        
+
     }
 }
