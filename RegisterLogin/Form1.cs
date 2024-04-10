@@ -4,11 +4,10 @@ namespace RegisterLogin
     {
         private readonly LoginManager loginManager = new();
         private string loggedUsername = "";
-        private static string filepath = "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\PROG\\Projects\\RegisterLogin\\RegisterLogin\\logins.txt";
+
         public Form1()
         {
             InitializeComponent();
-            //loginManager.AddUser(new Login("test", "test"));
             loginManager.LoadFromTxt();
         }
 
@@ -70,12 +69,9 @@ namespace RegisterLogin
                 lblWelcomeUser.Text = "Welcome " + loggedUsername;
                 txtLoginUser.Text = "";
                 txtLoginPassword.Text = "";
-                //PnlLoggedIn();
                 Form welcome = new Welcome(username, this);
                 welcome.Show();
                 Hide();
-                //lblLoginStatus.Text = "Login successful";
-                //lblLoginStatus.Visible = true;
             }
             else
             {

@@ -46,7 +46,7 @@ namespace RegisterLogin
         {
             try
             {
-                StreamWriter sw = new StreamWriter(txt, true);
+                StreamWriter sw = new(txt, true);
                 sw.WriteLine(username);
                 sw.WriteLine(password);
                 sw.Close();
